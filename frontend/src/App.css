@@ -1,0 +1,32 @@
+:root {
+  /* Borders */
+  --color-border-tertiary:  #e2e8f0;
+  --color-border-secondary: #cbd5e1;
+  --color-border-primary:   #94a3b8;
+  --color-border-info:      #93c5fd;
+  --color-border-success:   #86efac;
+  --color-border-danger:    #fca5a5;
+
+  /* Backgrounds */
+  --color-background-primary:   #ffffff;
+  --color-background-secondary: #f8fafc;
+  --color-background-info:      #eff6ff;
+  --color-background-success:   #f0fdf4;
+  --color-background-danger:    #fef2f2;
+
+  /* Text */
+  --color-text-primary:   #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-tertiary:  #94a3b8;
+  --color-text-info:      #2563eb;
+  --color-text-success:   #16a34a;
+  --color-text-danger:    #dc2626;
+
+  /* Border radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+
+  /* Font */
+  --font-sans: system-ui, sans-serif;
+}

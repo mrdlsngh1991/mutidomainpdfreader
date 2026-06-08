@@ -1,0 +1,18 @@
+# Mac system files
+.DS_Store
+backend/Applications/
+*.app
+
+# RAG / AI runtime data
+backend/faiss_medical_index/
+backend/pdfs/
+backend/db/
+backend/Applications/
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+frontend/node_modules/
