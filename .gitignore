@@ -1,22 +1,22 @@
-# Mac system files
-.DS_Store
-backend/Applications/
-*.app
-
-# RAG / AI runtime data
-backend/faiss_medical_index/
-backend/pdfs/
-backend/db/
-backend/Applications/
-
-# Python
-__pycache__/
-*.pyc
-
-# Node
+dist/
 node_modules/
-frontend/node_modules/
-
-.env
-**/.env
-backend/**/.env
+*.log
+*.env
+.DS_Store
+.idea/
+.vscode/
+*.iml
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.bak
+*.tmp
+*.cache
+*.pid
+*.seed
+*.log
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
