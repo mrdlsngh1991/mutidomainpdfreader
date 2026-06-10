@@ -18,13 +18,13 @@ async function uploadFileToBackend(file, onProgress) {
       else reject(new Error(`Upload failed: ${xhr.statusText}`));
     };
     xhr.onerror = () => reject(new Error("Network error during upload"));
-    xhr.open("POST", `${API_BASE}/upload`);
+    xhr.open("POST", `${API_BASE}/api/upload`);
     xhr.send(formData);
   });
 }
 
 async function queryBackend(prompt, conversationHistory = []) {
-  const res = await fetch(`${API_BASE}/query`, {
+  const res = await fetch(`${API_BASE}/api/query`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ query: prompt, history: conversationHistory }),
@@ -474,7 +474,7 @@ function QueryStep({ onBack, uploadedFile }) {
     try {
       const formData = new FormData();
       formData.append("file", uploadedFile);
-      const res = await fetch(`${API_BASE}/upload-to-s3`, { method: "POST", body: formData });
+      const res = await fetch(`${API_BASE}/api/upload-to-s3`, { method: "POST", body: formData });
       if (!res.ok) throw new Error(`Upload failed: ${res.statusText}`);
       setDataUploaded(true);
     } catch (err) {
